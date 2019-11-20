@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <link rel="stylesheet" type="text/css" href="css/style.css">
+	<title></title>
+</head>
+<body>
+
+
+
+	<h1>Function 1</h1>
+	<p>Click the button to demonstrate the prompt box.</p>
+	<button onclick="myFunction1()">Try it</button>
+	<p id="insert"></p>
+	<br><hr>
+
+
+
+
+
+	<h1>Function 2</h1>
+	<ul>
+		<li>Bread</li>
+		<li>Cookies</li>
+	</ul>
+	<p>click the button to change the text of the first list item(index0).</p>
+	<button onclick="myFunction()">Try it</button>
+	
+	<button onclick="myFunction2()">Click</button>
+
+	<br><hr>
+
+
+
+<h1>Function3</h1>
+<div id="change">
+<p class="child">A p element with class="child" in a div.</p>
+<p class="child">A p element with class='child'in a div. </p>
+<p>A p element in div with a <span class="child">span element with class="child"</span>inside of it.</p>
+</div>
+<p>Click the button to add a background color to all elements with class="child" inside the div element with id="change".</p>
+<button onclick="changeColor();">Try it</button>
+<p><strong>Note:</strong>The getElementByClassName() method is not supported in <span class ="hhh"> Internet </span> Explorer 8 and earlier versions.</p>
+<button onclick="text()">Try it</button>
+
+
+
+<h1>Function4</h1>
+<button onclick="insert()">click</button>
+<br><hr>
+  
+
+
+
+<h1>Function 5</h1>
+<p>Enter your name:</p><input type="text" id="fname" onblur="toUP()"> <!-- on blur means leaving the field  -->
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+<br><hr>
+
+
+
+
+<h1>Function 6</h1>
+<p>Select a new car from the list</p>
+<select id="mySelect" onchange="onChange()">
+	<option value="Audi">Audi
+	<option value="BMW">BMW
+	<option value=" MERCEDES">Mercedes
+	<option value="Volvo">Volvo
+</select>
+<p>When you select a car, a function is triggered which outputs the value of the seleted car.</p>
+<p id="changed"></p>
+<br><hr>
+
+
+<h1>Function 7</h1>
+<img src="grin.jpg" onerror="error()">
+<button onclick="error()">click</button>
+<br><hr>
+
+
+
+
+<h1>Function 8 </h1>
+<input type="text" onfocus="toYellow(this)">
+<p>When the input field gets focus, a function is triggered whcih changes the background-color.</p>
+<br><hr>
+
+
+
+
+
+<h1>Function 9</h1>
+<p> A fucntion is triggered when the user is pressing a key in the input field.</p>
+<input type="text" onkeydown="keyDown()" 	>
+
+
+
+
+
+
+<h1>Function 10</h1>
+
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.
+</p>
+<br><hr>
+
+
+
+
+
+
+
+<h1>Fucntion11</h1>
+
+<div onmousemove="showCoor(event);" onmouseout="clearCoor();"> </div>
+<p>Mouse over the rectangle above, and get the coordinates of your mouse pointer</p>
+
+<p>When the mouse is moved over the div, the p element will display the horizontal and vertical coordinates of your mouse pointer, whose values are returned from the clientX and clientY properties on the MouseEvent object.</p>
+<p id="demo1"></p>
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
